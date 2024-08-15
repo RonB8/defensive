@@ -9,5 +9,7 @@ SRCS = hello.cpp
 $(TARGET): $(SRCS)
 	$(CXX) $(CXXFLAGS) -o $(TARGET) $(SRCS)
 
+git pull origin main
+
 clean:
 	rm -f $(TARGET)
