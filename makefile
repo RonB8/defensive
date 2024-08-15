@@ -1,15 +1,12 @@
-CXX = g++
+all: push $(TARGET)
 
-CXXFLAGS = -Wall -std=c++11
-
-TARGET = program
-
-SRCS = hello.cpp
+push:
+	git add hello.cpp
+	git commit -m "-"
+	git push origin main
 
 $(TARGET): $(SRCS)
 	$(CXX) $(CXXFLAGS) -o $(TARGET) $(SRCS)
-
-git pull origin main
 
 clean:
 	rm -f $(TARGET)
