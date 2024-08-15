@@ -2,6 +2,6 @@
 #include <string>
 
 int main(){
-    std::cout << "Good afternoon\n";
+    std::cout << "Good evening\n";
     return 0;
 }
